@@ -494,6 +494,7 @@
         backdrop.addEventListener(
           "click",
           (e) => {
+            if (e.target !== backdrop) return;
             backdrop.classList.add("hidden");
             body.classList.remove("overflow-hidden");
           },
