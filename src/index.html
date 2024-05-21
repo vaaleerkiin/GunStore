@@ -410,8 +410,96 @@
         </form>
       </div>
     </footer>
+
+    <div
+      id="backdrop"
+      class="hidden fixed top-0 bottom-0 left-0 right-0 bg-[#0000005e]"
+    >
+      <div
+        class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center md:w-[750px] md:h-[420px] bg-white rounded-lg md:bg-[url('./img/modalbg.png')] md:bg-contain md:bg-no-repeat md:bg-right-bottom p-4"
+      >
+        <div class="md:w-[50%] w-[260px] sm:w-96">
+          <p class="font-['Montserrat'] md:text-2xl text-xl font-medium">
+            GunStore
+          </p>
+          <p class="font-['Montserrat'] font-extrabold text-2xl mt-5">
+            Получи 10% знижки
+          </p>
+          <p class="font-['Montserrat'] font-normal text-base">
+            Отримай якісний продукт уже завтра Наші менеджери звяжуться за 3
+            хвилини
+          </p>
+          <form class="mt-5" action="" method="post">
+            <div class="flex flex-wrap gap-3">
+              <label class="relative h-12 max-w-[100%] w-[100%]">
+                <img
+                  class="absolute top-[50%] md:left-4 left-2 translate-y-[-50%]"
+                  src="./img/icons/phone.png" />
+                <input
+                  class="max-w-[100%] w-[100%] h-12 md:pl-[40px] pl-8 bg-white rounded-sm font-['Montserrat'] border-solid border-2 border-[#0f62fe] text-xs"
+                  type="tel"
+                  name="tel"
+                  required
+                  placeholder="Номер телефону"
+              /></label>
+              <label class="relative h-12 max-w-[100%] w-[100%]">
+                <img
+                  class="absolute top-[50%] md:left-4 left-2 translate-y-[-50%]"
+                  src="./img/icons/mail.png" />
+                <input
+                  class="max-w-[100%] w-[100%] h-12 md:pl-[40px] pl-8 bg-white rounded-sm font-['Montserrat'] border-solid border-2 border-[#0f62fe] text-xs"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="Пошта"
+              /></label>
+
+              <input
+                class="w-[100%] h-12 md:px-[58px] px-8 bg-[#0f62fe] text-white text-xs font-medium rounded-sm font-['Montserrat'] flex-grow-1"
+                type="submit"
+                value="Зробити замовлення"
+              />
+            </div>
+          </form>
+        </div>
+        <button
+          id="closeModal"
+          class="absolute top-2 right-2 z-10 w-6 h-6 flex justify-center items-center"
+        >
+          <img src="./img/close.png" />
+        </button>
+      </div>
+    </div>
     <script>
       new SimpleLightbox(".gallery a", {});
+    </script>
+    <script>
+      setTimeout(() => {
+        const backdrop = document.getElementById("backdrop");
+        const body = document.querySelector("body");
+
+        body.classList.add("overflow-hidden");
+        backdrop.classList.remove("hidden");
+        document.getElementById("closeModal").addEventListener(
+          "click",
+          () => {
+            backdrop.classList.add("hidden");
+            body.classList.remove("overflow-hidden");
+          },
+          {
+            once: true,
+          }
+        );
+
+        backdrop.addEventListener(
+          "click",
+          (e) => {
+            backdrop.classList.add("hidden");
+            body.classList.remove("overflow-hidden");
+          },
+          { once: true }
+        );
+      }, 3000);
     </script>
   </body>
 </html>
