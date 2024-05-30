@@ -611,6 +611,14 @@ video {
   margin-right: auto;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -651,20 +659,8 @@ video {
   margin-top: 2.25rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
 .block {
   display: block;
-}
-
-.inline {
-  display: inline;
 }
 
 .flex {
@@ -715,6 +711,10 @@ video {
   height: 1.75rem;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .w-3 {
   width: 0.75rem;
 }
@@ -751,10 +751,6 @@ video {
   width: 907px;
 }
 
-.w-52 {
-  width: 13rem;
-}
-
 .max-w-52 {
   max-width: 13rem;
 }
@@ -771,12 +767,16 @@ video {
   max-width: 1260px;
 }
 
-.max-w-\[436px\] {
-  max-width: 436px;
+.max-w-\[340px\] {
+  max-width: 340px;
 }
 
 .max-w-\[50\%\] {
   max-width: 50%;
+}
+
+.max-w-\[600px\] {
+  max-width: 600px;
 }
 
 .max-w-\[850px\] {
@@ -833,16 +833,20 @@ video {
   justify-content: space-between;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
+.gap-0\.5 {
+  gap: 0.125rem;
+}
+
 .gap-1 {
   gap: 0.25rem;
 }
 
 .gap-1\.5 {
   gap: 0.375rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
 }
 
 .gap-2 {
@@ -857,12 +861,32 @@ video {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-8 {
   gap: 2rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.text-nowrap {
+  text-wrap: nowrap;
+}
+
+.text-pretty {
+  text-wrap: pretty;
 }
 
 .rounded-\[50\%\] {
@@ -1169,8 +1193,8 @@ html {
     gap: 0.25rem;
   }
 
-  .sm\:gap-1\.5 {
-    gap: 0.375rem;
+  .sm\:gap-2 {
+    gap: 0.5rem;
   }
 
   .sm\:gap-4 {
@@ -1185,9 +1209,9 @@ html {
     padding-top: 4rem;
   }
 
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .sm\:text-4xl {
@@ -1224,6 +1248,14 @@ html {
     left: 1.75rem;
   }
 
+  .md\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
   .md\:ml-2 {
     margin-left: 0.5rem;
   }
@@ -1236,16 +1268,16 @@ html {
     margin-top: 0px;
   }
 
+  .md\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
   .md\:mt-16 {
     margin-top: 4rem;
   }
 
   .md\:mt-8 {
     margin-top: 2rem;
-  }
-
-  .md\:mb-12 {
-    margin-bottom: 3rem;
   }
 
   .md\:flex {
@@ -1272,6 +1304,14 @@ html {
     width: 750px;
   }
 
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:max-w-\[436px\] {
+    max-width: 436px;
+  }
+
   .md\:max-w-\[440px\] {
     max-width: 440px;
   }
@@ -1286,10 +1326,6 @@ html {
 
   .md\:flex-wrap {
     flex-wrap: wrap;
-  }
-
-  .md\:gap-12 {
-    gap: 3rem;
   }
 
   .md\:gap-5 {
@@ -1363,18 +1399,26 @@ html {
     line-height: 1.75rem;
   }
 
-  .md\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+
+  .md\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .lg\:mt-11 {
     margin-top: 2.75rem;
   }
@@ -1395,16 +1439,16 @@ html {
     margin-top: 7rem;
   }
 
+  .lg\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .lg\:mt-32 {
     margin-top: 8rem;
   }
 
   .lg\:mt-4 {
     margin-top: 1rem;
-  }
-
-  .lg\:mb-16 {
-    margin-bottom: 4rem;
   }
 
   .lg\:h-\[85px\] {
@@ -1423,12 +1467,12 @@ html {
     max-width: 440px;
   }
 
-  .lg\:max-w-\[519px\] {
-    max-width: 519px;
+  .lg\:max-w-\[496px\] {
+    max-width: 496px;
   }
 
-  .lg\:max-w-\[600px\] {
-    max-width: 600px;
+  .lg\:max-w-\[519px\] {
+    max-width: 519px;
   }
 
   .lg\:max-w-\[823px\] {
@@ -1443,10 +1487,6 @@ html {
     max-width: 924px;
   }
 
-  .lg\:max-w-\[496px\] {
-    max-width: 496px;
-  }
-
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1455,20 +1495,16 @@ html {
     flex-wrap: wrap;
   }
 
-  .lg\:items-center {
-    align-items: center;
-  }
-
-  .lg\:justify-center {
-    justify-content: center;
-  }
-
   .lg\:gap-16 {
     gap: 4rem;
   }
 
   .lg\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .lg\:pb-4 {
+    padding-bottom: 1rem;
   }
 
   .lg\:text-2xl {
@@ -1500,6 +1536,11 @@ html {
     font-size: 42px;
   }
 
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .lg\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -1508,10 +1549,5 @@ html {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
