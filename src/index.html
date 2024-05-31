@@ -26,7 +26,9 @@
   </head>
 
   <body>
-    <header class="md:px-20 px-12 md:py-5 py-4 flex justify-end">
+    <header
+      class="md:px-20 md:py-5 py-4 flex justify-end px-4 max-w-[1260px] mx-auto"
+    >
       <a
         class="font-['Montserrat'] md:text-lg text-sm font-normal"
         href="index.html"
@@ -75,7 +77,7 @@
             >
             <a
               href="#footer"
-              class="px-6 py-4 flex gap-3 mt-3 md:mt-0 items-center justify-center bg-[#2055e5] text-white rounded-xl font-['Montserrat'] font-normal"
+              class="px-6 py-4 flex gap-3 mt-6 md:mt-0 items-center justify-center bg-[#2055e5] text-white rounded-xl font-['Montserrat'] font-normal"
             >
               Замовити зараз
               <img class="w-6 h-6" src="./img/icons/arrow.png" alt="arrow" />
@@ -83,7 +85,7 @@
           </div>
         </div>
         <div class="flex justify-between md:max-w-[537px]">
-          <div class="flex flex-col justify-center gap-2 sm:gap-4">
+          <div class="flex flex-col justify-center gap-4">
             <p
               class="flex items-center gap-1 font-['Montserrat'] font-normal text-[10px] min-[425px]:text-xs sm:text-sm"
             >
@@ -97,7 +99,7 @@
               якість на ринку
             </p>
           </div>
-          <div class="flex flex-col justify-center gap-2 sm:gap-4">
+          <div class="flex flex-col justify-center gap-4">
             <p
               class="flex items-center gap-1 font-['Montserrat'] font-normal text-[10px] min-[425px]:text-xs sm:text-sm"
             >
@@ -118,12 +120,14 @@
           class="aspect-[5/3] w-[100%] md:aspect-square lg:max-w-[496px] md:max-w-[440px] bg-white rounded-md shadow-custom overflow-hidden object-cover"
           autoplay
           muted
+          playsinline
           loop
         >
           <source src="./img/hero.mp4" type="video/mp4" />
 
           Your browser does not support the video tag.
         </video>
+
         <div class="gallery flex flex-row gap-2">
           <a
             class="aspect-[16/9] max-w-52 bg-white rounded-md shadow-custom"
@@ -161,12 +165,12 @@
         Що робить <span class="whitespace-nowrap">Weal Maker</span> найкращим!
       </h2>
       <div
-        class="flex lg:flex-row flex-col items-center justify-center lg:gap-16 gap-3 sm:gap-6 lg:flex-wrap max-w-[1000px] mx-auto"
+        class="flex lg:flex-row flex-col items-center justify-center lg:gap-16 gap-6 lg:flex-wrap max-w-[1000px] mx-auto"
       >
         <div
           class="max-w-[340px] md:max-w-[436px] flex flex-col justify-center mx-auto"
         >
-          <img class="w-10 md:w-auto mx-auto" src="./img/icons/gun.png" />
+          <img class="w-12 md:w-auto mx-auto" src="./img/icons/gun.png" />
           <p
             class="font-['Montserrat'] font-medium text-lg sm:font-semibold md:text-3xl text-[#21272a] mt-2 mb-1 md:mb-2"
           >
@@ -181,7 +185,7 @@
         <div
           class="max-w-[340px] md:max-w-[436px] flex flex-col justify-center mx-auto"
         >
-          <img class="w-10 md:w-auto mx-auto" src="./img/icons/security.png" />
+          <img class="w-9 md:w-auto mx-auto" src="./img/icons/foot.png" />
           <p
             class="font-['Montserrat'] font-medium text-lg sm:font-semibold md:text-3xl text-[#21272a] mt-2 mb-1 md:mb-2"
           >
@@ -190,14 +194,14 @@
           <p
             class="font-['Montserrat'] font-normal text-base md:text-lg text-[#21272a] text-pretty"
           >
-            Ця іграшка чудово розвиває сенсорні навички, швидкість реакції та
-            зорово-моторну координацію дитини.
+            Іграшка чудово розвиває сенсо-моторні реакції, швидкість та
+            спритність
           </p>
         </div>
         <div
           class="max-w-[340px] md:max-w-[436px] flex flex-col justify-center mx-auto"
         >
-          <img class="w-10 md:w-auto mx-auto" src="./img/icons/easy.png" />
+          <img class="w-12 md:w-auto mx-auto" src="./img/icons/easy.png" />
           <p
             class="font-['Montserrat'] font-medium text-lg sm:font-semibold md:text-3xl text-[#21272a] mt-2 mb-1 md:mb-2"
           >
@@ -215,7 +219,7 @@
           class="max-w-[340px] md:max-w-[436px] flex flex-col justify-center mx-auto"
         >
           <img
-            class="w-10 md:w-auto mx-auto"
+            class="w-12 md:w-auto mx-auto"
             src="./img/icons/positive-vote.png"
           />
           <p
@@ -238,7 +242,7 @@
         Замовити
       </a>
     </section>
-    <section class="px-4 mt-8 md:mt-8 lg:mt-14 max-w-[1260px] mx-auto">
+    <section class="px-4 mt-10 lg:mt-14 max-w-[1260px] mx-auto">
       <div class="hidden sm:block">
         <div class="flex gap-3 items-center justify-center">
           <div
@@ -301,17 +305,15 @@
         Замовити
       </a>
     </section>
-    <section class="px-4 lg:mt-22 md:mt-10 mt-8 max-w-[1260px] mx-auto">
+    <section class="px-4 lg:mt-22 md:mt-10 mt-10 max-w-[1260px] mx-auto">
       <h2
         class="font-['Montserrat'] font-medium lg:text-[42px] md:text-3xl text-2xl text-center max-w-[850px] lg:mb-16 md:mb-12 mb-10 mx-auto"
       >
         Відгуки наших клієнтів.
       </h2>
       <div class="flex gap-4">
-        <div class="flex flex-col gap-4 sm:gap-6 md:gap-8 max-w-[600px]">
-          <div
-            class="flex flex-row gap-0.5 sm:gap-2 justify-center items-start"
-          >
+        <div class="flex flex-col gap-6 sm:gap-6 md:gap-8 min-md:max-w-[600px]">
+          <div class="flex flex-row gap-2 justify-center items-start">
             <div
               class="w-7 h-7 sm:w-14 sm:h-14 min:w-7 min:h-7 sm:min:w-14 sm:min:h-14 overflow-hidden rounded-[50%]"
             >
@@ -323,7 +325,7 @@
             <div class="flex-1">
               <div class="flex justify-between items-center">
                 <p
-                  class="font-['Montserrat'] text-lg sm:text-2xl font-medium text-nowrap"
+                  class="font-['Montserrat'] text-base min-[375px]:text-lg sm:text-2xl font-medium text-nowrap"
                 >
                   Марія Нижовьска
                 </p>
@@ -357,9 +359,7 @@
               </p>
             </div>
           </div>
-          <div
-            class="flex flex-row gap-0.5 sm:gap-2 justify-center items-start"
-          >
+          <div class="flex flex-row gap-2 justify-center items-start">
             <div
               class="w-7 h-7 sm:w-14 sm:h-14 min:w-7 min:h-7 sm:min:w-14 sm:min:h-14 overflow-hidden rounded-[50%]"
             >
@@ -371,7 +371,7 @@
             <div class="flex-1">
               <div class="flex justify-between items-center">
                 <p
-                  class="font-['Montserrat'] text-lg sm:text-2xl font-medium text-nowrap"
+                  class="font-['Montserrat'] text-base min-[375px]:text-lg sm:text-2xl font-medium text-nowrap"
                 >
                   Володимир Грецько
                 </p>
@@ -404,9 +404,7 @@
               </p>
             </div>
           </div>
-          <div
-            class="flex flex-row gap-0.5 sm:gap-2 justify-center items-start"
-          >
+          <div class="flex flex-row gap-2 justify-center items-start">
             <div
               class="w-7 h-7 sm:w-14 sm:h-14 min:w-7 min:h-7 sm:min:w-14 sm:min:h-14 overflow-hidden rounded-[50%]"
             >
@@ -418,7 +416,7 @@
             <div class="flex-1">
               <div class="flex justify-between items-center">
                 <p
-                  class="font-['Montserrat'] text-lg sm:text-2xl font-medium text-nowrap"
+                  class="font-['Montserrat'] text-base min-[375px]:text-lg sm:text-2xl font-medium text-nowrap"
                 >
                   Олександр Данько
                 </p>
@@ -451,9 +449,7 @@
               </p>
             </div>
           </div>
-          <div
-            class="flex flex-row gap-0.5 sm:gap-2 justify-center items-start"
-          >
+          <div class="flex flex-row gap-2 justify-center items-start">
             <div
               class="w-7 h-7 sm:w-14 sm:h-14 min:w-7 min:h-7 sm:min:w-14 sm:min:h-14 overflow-hidden rounded-[50%]"
             >
@@ -465,7 +461,7 @@
             <div class="flex-1">
               <div class="flex justify-between items-center">
                 <p
-                  class="font-['Montserrat'] text-lg sm:text-2xl font-medium text-nowrap"
+                  class="font-['Montserrat'] text-base min-[375px]:text-lg sm:text-2xl font-medium text-nowrap"
                 >
                   Уляна Тулайдан
                 </p>
@@ -611,7 +607,7 @@
               /></label>
 
               <input
-                class="w-[100%] h-12 md:px-[58px] px-8 bg-[#0f62fe] text-white text-xs font-medium rounded-sm font-['Montserrat'] flex-grow-1"
+                class="w-[100%] h-12 md:px-[58px] px-8 bg-[#0f62fe] text-white text-base font-medium rounded-sm font-['Montserrat'] flex-grow-1"
                 type="submit"
                 value="Зробити замовлення"
               />
