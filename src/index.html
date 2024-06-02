@@ -12,7 +12,10 @@
     />
 
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -628,13 +631,13 @@
 
     <div
       id="backdrop"
-      class="hidden fixed top-0 bottom-0 left-0 right-0 bg-[#0000005e]"
+      class="hidden fixed top-0 bottom-0 left-0 right-0 bg-[#0000005e] justify-center items-center p-4"
     >
       <div
         id="modal"
-        class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center md:w-[750px] md:h-[420px] bg-white rounded-lg md:bg-[url('./img/modalbg.png')] md:bg-contain md:bg-no-repeat md:bg-right-bottom p-4"
+        class="relative flex items-center w-[100%] max-md:max-w-[462px] md:w-[750px] md:h-[420px] bg-white rounded-lg md:bg-[url('./img/modalbg.png')] md:bg-contain md:bg-no-repeat md:bg-right-bottom p-4"
       >
-        <div class="md:w-[50%] w-[260px] sm:w-96">
+        <div class="md:w-[50%] min-w-[260px] sm:w-[100%]">
           <p class="font-['Montserrat'] font-extrabold text-2xl mt-5">
             Замовляй зі знижкою 25%
           </p>
@@ -648,7 +651,7 @@
               >1500₴</span
             ></span
           >
-          <form class="mt-5" action="#" method="post">
+          <form class="mt-5" action="#">
             <div class="flex flex-wrap gap-3">
               <label class="relative h-12 max-w-[100%] w-[100%]">
                 <img
@@ -731,12 +734,14 @@
 
       document.getElementById("closeModal").addEventListener("click", () => {
         backdrop.classList.add("hidden");
+        backdrop.classList.remove("flex");
         body.classList.remove("overflow-hidden");
       });
 
       backdrop.addEventListener("click", (e) => {
         if (e.target !== backdrop) return;
         backdrop.classList.add("hidden");
+        backdrop.classList.remove("flex");
         body.classList.remove("overflow-hidden");
       });
 
@@ -744,6 +749,7 @@
         e.addEventListener("click", () => {
           body.classList.add("overflow-hidden");
           backdrop.classList.remove("hidden");
+          backdrop.classList.add("flex");
         })
       );
     </script>
