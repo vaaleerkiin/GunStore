@@ -39,7 +39,7 @@
     <header class="md:py-5 py-4 flex justify-end px-4 max-w-[1260px] mx-auto">
       <a
         class="font-['Montserrat'] md:text-lg text-sm font-normal"
-        href="index.html"
+        href="tel:+380686291853"
         >+380 68 629 1853</a
       >
     </header>
@@ -83,13 +83,13 @@
                 >1500₴</span
               ></span
             >
-            <a
+            <button
               href="#footer"
-              class="px-6 py-4 flex gap-3 mt-6 md:mt-0 items-center justify-center bg-[#2055e5] text-white rounded-xl font-['Montserrat'] font-normal"
+              class="openModal px-6 py-4 flex gap-3 mt-6 md:mt-0 items-center justify-center bg-[#2055e5] hover:bg-[#4877eb] active:bg-[#70a0f1] ease-in-out duration-300 text-white rounded-xl font-['Montserrat'] font-normal"
             >
               Замовити зараз
               <img class="w-6 h-6" src="./img/icons/arrow.png" alt="arrow" />
-            </a>
+            </button>
           </div>
         </div>
         <div class="flex justify-between gap-3 md:max-w-[537px]">
@@ -135,7 +135,8 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col gap-3 items-center">
+      <div class="galleryHero flex flex-col gap-3 items-center">
+        <!-- <a href="./img/icons/placeholder.png" data-lightbox-type="video"> -->
         <video
           class="aspect-[5/3] w-[100%] md:aspect-square lg:max-w-[496px] md:max-w-[440px] bg-white rounded-md shadow-custom overflow-hidden object-cover"
           autoplay
@@ -147,11 +148,12 @@
 
           Your browser does not support the video tag.
         </video>
-
-        <div class="gallery flex flex-row gap-2">
+        <!-- </a> -->
+        <div class="flex flex-row gap-2">
           <a
             class="aspect-[16/9] max-w-52 bg-white rounded-md shadow-custom"
-            href="./img/bluegun.png "
+            href="./img/bluegun.png"
+            data-lightbox-type="image"
           >
             <img
               class="object-contain aspect-[16/9] lg:max-w-40"
@@ -162,6 +164,7 @@
           <a
             class="aspect-[16/9] max-w-52 bg-white rounded-md shadow-custom"
             href="./img/graygun.png"
+            data-lightbox-type="image"
             ><img
               class="object-contain aspect-[16/9] lg:max-w-40"
               src="./img/graygun.png"
@@ -170,6 +173,7 @@
           <a
             class="aspect-[16/9] max-w-52 bg-white rounded-md shadow-custom"
             href="./img/redgun.png"
+            data-lightbox-type="image"
           >
             <img
               class="object-contain aspect-[16/9] lg:max-w-40"
@@ -271,12 +275,11 @@
           </p>
         </div>
       </div>
-      <a
-        href="#footer"
-        class="px-9 py-4 w-[100%] sm:max-w-[280px] sm:w-auto flex items-center rounded-xl justify-center bg-[#2055e5] text-white lg:mt-10 mt-6 text-xl font-medium font-['Montserrat'] tracking-[0.5px] mx-auto"
+      <button
+        class="openModal px-9 py-4 w-[100%] min-w-[280px] sm:max-w-[280px] sm:w-auto flex items-center rounded-xl justify-center bg-[#2055e5] hover:bg-[#4877eb] active:bg-[#70a0f1] ease-in-out duration-300 text-white lg:mt-10 mt-6 text-xl font-medium font-['Montserrat'] tracking-[0.5px] mx-auto"
       >
         Замовити
-      </a>
+      </button>
     </section>
     <section class="px-4 mt-16 lg:mt-14 max-w-[1260px] mx-auto">
       <div class="hidden sm:block">
@@ -284,7 +287,10 @@
           <div
             class="lg:max-w-[440px] w-[440px] aspect-[440/410] bg-[#f7f8fa] rounded-xl flex justify-center items-center flex-grow-1 overflow-hidden"
           >
-            <img class="object-cover" src="./img/gal1.png" alt="gun picture" />
+            <video autoplay muted playsinline loop>
+              <source src="./img/IMG_5585.MOV" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div
             class="lg:max-w-[907px] w-[907px] aspect-[907/410] bg-[#f7f8fa] rounded-xl flex justify-center items-center flex-grow-1 overflow-hidden"
@@ -333,7 +339,10 @@
           <div
             class="lg:max-w-[440px] w-[440px] aspect-[440/410] bg-[#f7f8fa] rounded-xl flex justify-center items-center flex-grow-1 overflow-hidden"
           >
-            <img class="object-cover" src="./img/gal1.png" alt="gun picture" />
+            <video autoplay muted playsinline loop>
+              <source src="./img/IMG_5585.MOV" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div
             class="lg:max-w-[519px] w-[519px] aspect-[519/410] bg-[#f7f8fa] rounded-xl flex justify-center items-center flex-grow-1 overflow-hidden"
@@ -342,12 +351,12 @@
           </div>
         </div>
       </div>
-      <a
-        href="#footer"
-        class="px-9 py-4 w-[100%] sm:max-w-[280px] sm:w-auto flex items-center rounded-xl justify-center bg-[#2055e5] text-white lg:mt-12 mt-6 text-xl font-medium font-['Montserrat'] tracking-[0.5px] mx-auto"
+
+      <button
+        class="openModal px-9 py-4 w-[100%] min-w-[280px] sm:max-w-[280px] sm:w-auto flex items-center rounded-xl justify-center bg-[#2055e5] hover:bg-[#4877eb] active:bg-[#70a0f1] ease-in-out duration-300 text-white lg:mt-12 mt-6 text-xl font-medium font-['Montserrat'] tracking-[0.5px] mx-auto"
       >
         Замовити
-      </a>
+      </button>
     </section>
     <section class="px-4 lg:mt-22 mt-16 max-w-[1260px] mx-auto">
       <h2
@@ -574,12 +583,11 @@
           <img src="./img/desc.png" alt="guns picture" />
         </div>
       </div>
-      <a
-        href="#footer"
-        class="px-9 py-4 w-[100%] sm:max-w-[280px] sm:w-auto flex items-center rounded-xl justify-center bg-[#2055e5] text-white lg:mt-12 mt-6 text-xl font-medium font-['Montserrat'] tracking-[0.5px] mx-auto"
+      <button
+        class="openModal px-9 py-4 w-[100%] min-w-[280px] sm:max-w-[280px] sm:w-auto flex items-center rounded-xl justify-center bg-[#2055e5] hover:bg-[#4877eb] active:bg-[#70a0f1] ease-in-out duration-300 text-white lg:mt-12 mt-6 text-xl font-medium font-['Montserrat'] tracking-[0.5px] mx-auto"
       >
         Замовити
-      </a>
+      </button>
     </section>
     <footer id="footer" class="lg:mt-28 md:mt-16 mt-12 bg-[#0f62fe] px-4">
       <div class="lg:max-w-[924px] mx-auto sm:pt-16 pt-10 md:pb-28 pb-14">
@@ -593,7 +601,7 @@
         >
           ми перетелефонуємо вам <span class="text-nowrap">протягом 2 хв</span>
         </p>
-        <form class="mt-9" action="#" method="post">
+        <form class="mt-9" action="#">
           <div class="flex flex-wrap md:gap-5 gap-1.5">
             <label class="relative flex-1 lg:h-[85px] h-12 md:h-16 flex-grow-1">
               <img
@@ -606,18 +614,6 @@
                 name="tel"
                 required
                 placeholder="Номер телефону"
-            /></label>
-            <label class="relative flex-1 lg:h-[85px] h-12 md:h-16 flex-grow-1">
-              <img
-                class="absolute top-[50%] md:left-7 left-2 translate-y-[-50%]"
-                src="./img/icons/mail.png"
-                alt="icon" />
-              <input
-                class="max-w-[100%] w-[100%] lg:h-[85px] h-12 md:h-16 md:pl-[58px] pl-8 bg-white rounded-lg font-['Montserrat']"
-                type="email"
-                name="email"
-                required
-                placeholder="Пошта"
             /></label>
 
             <input
@@ -635,6 +631,7 @@
       class="hidden fixed top-0 bottom-0 left-0 right-0 bg-[#0000005e]"
     >
       <div
+        id="modal"
         class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center md:w-[750px] md:h-[420px] bg-white rounded-lg md:bg-[url('./img/modalbg.png')] md:bg-contain md:bg-no-repeat md:bg-right-bottom p-4"
       >
         <div class="md:w-[50%] w-[260px] sm:w-96">
@@ -665,18 +662,6 @@
                   required
                   placeholder="Номер телефону"
               /></label>
-              <label class="relative h-12 max-w-[100%] w-[100%]">
-                <img
-                  class="absolute top-[50%] md:left-4 left-2 translate-y-[-50%]"
-                  src="./img/icons/mail.png"
-                  alt="icon" />
-                <input
-                  class="max-w-[100%] w-[100%] h-12 md:pl-[40px] pl-8 bg-white rounded-sm font-['Montserrat'] border-solid border-2 border-[#0f62fe] text-xs"
-                  type="email"
-                  name="email"
-                  required
-                  placeholder="Пошта"
-              /></label>
 
               <input
                 class="w-[100%] h-12 md:px-[58px] px-8 bg-[#0f62fe] text-white text-base font-medium rounded-sm font-['Montserrat'] flex-grow-1"
@@ -694,37 +679,91 @@
         </button>
       </div>
     </div>
+    <div
+      id="sucsses"
+      class="hidden fixed top-0 bottom-0 left-0 right-0 bg-[#ffffff]"
+    >
+      <div class="max-w-[506px] mx-auto sm:pt-40 pt-24">
+        <img
+          class="mx-auto w-6 h-6 sm:w-auto sm:h-auto"
+          src="./img/icons/sucsses.png"
+          alt="sucsses"
+        />
+        <h3
+          class="font-['Montserrat'] sm:text-5xl text-3xl font-medium text-center sm:mt-8 mt-3"
+        >
+          Дякуюємо!
+        </h3>
+        <p
+          class="font-['Montserrat'] sm:text-2xl text-xs font-normal text-center sm:mt-4 mt-2"
+        >
+          Ми перетелефонуємо вам протягом 2 хв
+        </p>
+      </div>
+    </div>
     <script>
-      new SimpleLightbox(".gallery a", {});
+      const gallaryHero = new SimpleLightbox(".galleryHero a", {});
+      // gallaryHero.on("shown.simplelightbox", (e) => {
+      //   if (e.srcElement.getAttribute("data-lightbox-type") === "video") {
+      //     console.log(document.querySelector(".simple-lightbox .sl-image"));
+
+      //     document.querySelector(
+      //       ".sl-image"
+      //     ).innerHTML = `<video class="h-[100%] mx-auto" autoplay controls playsinline loop><source src="./img/hero.mp4" type="video/mp4" />Your browser does not support the video tag.</video>`;
+      //   }
+      // });
+
+      // gallaryHero.on("changed.simplelightbox", (e) => {
+      //   console.log("e", e);
+      //   if (e.srcElement.getAttribute("data-lightbox-type") === "video") {
+      //     console.log(document.querySelector(".simple-lightbox .sl-image"));
+
+      //     document.querySelector(
+      //       ".sl-image"
+      //     ).innerHTML = `<video class="h-[100%] mx-auto" autoplay controls playsinline loop><source src="./img/hero.mp4" type="video/mp4" />Your browser does not support the video tag.</video>`;
+      //   }
+      // });
     </script>
     <script>
-      setTimeout(() => {
-        const backdrop = document.getElementById("backdrop");
-        const body = document.querySelector("body");
+      const backdrop = document.getElementById("backdrop");
+      const body = document.querySelector("body");
+      const openModalButtons = document.querySelectorAll(".openModal");
 
-        body.classList.add("overflow-hidden");
-        backdrop.classList.remove("hidden");
-        document.getElementById("closeModal").addEventListener(
-          "click",
-          () => {
-            backdrop.classList.add("hidden");
-            body.classList.remove("overflow-hidden");
-          },
-          {
-            once: true,
-          }
-        );
+      document.getElementById("closeModal").addEventListener("click", () => {
+        backdrop.classList.add("hidden");
+        body.classList.remove("overflow-hidden");
+      });
 
-        backdrop.addEventListener(
-          "click",
-          (e) => {
-            if (e.target !== backdrop) return;
-            backdrop.classList.add("hidden");
-            body.classList.remove("overflow-hidden");
-          },
-          { once: true }
-        );
-      }, 7000);
+      backdrop.addEventListener("click", (e) => {
+        if (e.target !== backdrop) return;
+        backdrop.classList.add("hidden");
+        body.classList.remove("overflow-hidden");
+      });
+
+      openModalButtons.forEach((e) =>
+        e.addEventListener("click", () => {
+          body.classList.add("overflow-hidden");
+          backdrop.classList.remove("hidden");
+        })
+      );
+    </script>
+    <script>
+      const modalForm = document.querySelector("#modal form");
+      modalForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        console.log(e.target.querySelector("label input").value);
+
+        document.getElementById("sucsses").classList.remove("hidden");
+      });
+    </script>
+    <script>
+      const footerForm = document.querySelector("footer form");
+      footerForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        console.log(e.target.querySelector("label input").value);
+
+        document.getElementById("sucsses").classList.remove("hidden");
+      });
     </script>
   </body>
 </html>
