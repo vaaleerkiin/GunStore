@@ -10,6 +10,45 @@
       name="keywords"
       content="Weal Maker, електричний водяний пістолет, купити водяний пістолет, купити Weal Maker, водяний пістолет"
     />
+    <link rel="preload" href="./img/hero.mp4" as="video" type="mp4" />
+    <link rel="preload" href="./img/IMG_5585.mov" as="video" type="mp4" />
+    <link rel="preload" href="./img/bluegun.png" as="image" type="png" />
+    <link rel="preload" href="./img/redgun.png" as="image" type="png" />
+    <link rel="preload" href="./img/graygun.png" as="image" type="png" />
+    <link rel="preload" href="./img/desc.png" as="image" type="png" />
+    <link rel="preload" href="./img/gal1.png" as="image" type="png" />
+    <link rel="preload" href="./img/gal2.png" as="image" type="png" />
+    <link rel="preload" href="./img/gal3.png" as="image" type="png" />
+    <link rel="preload" href="./img/gal4.png" as="image" type="png" />
+    <link rel="preload" href="./img/modalbg.png" as="image" type="png" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"
+      integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css"
+      integrity="sha512-nUqPe0+ak577sKSMThGcKJauRI7ENhKC2FQAOOmdyCYSrUh0GnwLsZNYqwilpMmplN+3nO3zso8CWUgu33BDag=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-video.min.css"
+      integrity="sha512-89gDQOHnYjji90NPJ7+M5tgA/0E+fjL4KuSFhi6tjH6sZ54yUEogPMmOAgbI599fW1CtCyrsJbch8k/QzuoXzw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/video/lg-video.min.js"
+      integrity="sha512-Eo7d/1I/2Yywxw/unjfX06Q+owD82+3ign70yHtNTajId+C3CcHeqb+XP/a+uq/Fhrrkf8MeBcBiZqoMASFiiw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <meta charset="UTF-8" />
     <meta
@@ -21,19 +60,6 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.3/simple-lightbox.min.js"
-      integrity="sha512-Vtot07oogPy4e0JzAfUgyvia0fATgR1PWWNG89EeQgPXmaIhjGQIFijUVxRn0TScCMCH57Y7eJSixmYYDJkJ1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.3/simple-lightbox.css"
-      integrity="sha512-5gTxhbmgsOKfPP2+TeKslkMmyxF0Cmyr2YrJrfaXD/ChLHavFXGzDDG9ZiOca1P/2/5nXuujkB2BWymVKu1pPg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <link href="./output.css" rel="stylesheet" />
   </head>
@@ -138,25 +164,28 @@
           </div>
         </div>
       </div>
-      <div class="galleryHero flex flex-col gap-3 items-center">
-        <!-- <a href="./img/icons/placeholder.png" data-lightbox-type="video"> -->
-        <video
-          class="aspect-[5/3] w-[100%] md:aspect-square lg:max-w-[496px] md:max-w-[440px] bg-white rounded-md shadow-custom overflow-hidden object-cover"
-          autoplay
-          muted
-          playsinline
-          loop
+      <div class="gallery-content flex flex-col gap-3 items-center">
+        <a
+          data-lg-size="720-1080"
+          data-video='{"source": [{"src":"img/hero.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "controls": true}}'
+          class="cursor-pointer"
         >
-          <source src="./img/hero.mp4" type="video/mp4" />
+          <video
+            class="aspect-[5/3] w-[100%] md:aspect-square lg:max-w-[496px] md:max-w-[440px] bg-white rounded-md shadow-custom overflow-hidden object-cover"
+            autoplay
+            muted
+            playsinline
+            loop
+          >
+            <source src="./img/hero.mp4" type="video/mp4" />
 
-          Your browser does not support the video tag.
-        </video>
-        <!-- </a> -->
+            Your browser does not support the video tag.
+          </video>
+        </a>
         <div class="flex flex-row gap-2">
           <a
             class="aspect-[16/9] max-w-52 bg-white rounded-md shadow-custom"
-            href="./img/bluegun.png"
-            data-lightbox-type="image"
+            href="img/bluegun.png"
           >
             <img
               class="object-contain aspect-[16/9] lg:max-w-40"
@@ -166,8 +195,7 @@
           </a>
           <a
             class="aspect-[16/9] max-w-52 bg-white rounded-md shadow-custom"
-            href="./img/graygun.png"
-            data-lightbox-type="image"
+            href="img/graygun.png"
             ><img
               class="object-contain aspect-[16/9] lg:max-w-40"
               src="./img/graygun.png"
@@ -175,8 +203,7 @@
           /></a>
           <a
             class="aspect-[16/9] max-w-52 bg-white rounded-md shadow-custom"
-            href="./img/redgun.png"
-            data-lightbox-type="image"
+            href="img/redgun.png"
           >
             <img
               class="object-contain aspect-[16/9] lg:max-w-40"
@@ -285,24 +312,28 @@
       </button>
     </section>
     <section class="px-4 mt-16 lg:mt-14 max-w-[1260px] mx-auto">
-      <div class="hidden sm:block">
+      <div class="gallery-content hidden sm:block">
         <div class="flex gap-3 items-center justify-center">
-          <div
-            class="lg:max-w-[440px] w-[440px] aspect-[440/410] bg-[#f7f8fa] rounded-xl flex justify-center items-center flex-grow-1 overflow-hidden"
+          <a
+            data-lg-size="720-1080"
+            data-video='{"source": [{"src":"img/IMG_5585.MOV", "type":"video/mp4"}], "attributes": {"preload": false, "controls": true}}'
+            class="cursor-pointer lg:max-w-[440px] w-[440px] aspect-[440/410] bg-[#f7f8fa] rounded-xl flex justify-center items-center flex-grow-1 overflow-hidden"
           >
             <video autoplay muted playsinline loop>
               <source src="./img/IMG_5585.MOV" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-          </div>
-          <div
-            class="lg:max-w-[907px] w-[907px] aspect-[907/410] bg-[#f7f8fa] rounded-xl flex justify-center items-center flex-grow-1 overflow-hidden"
+          </a>
+          <a
+            href="img/gal2.png"
+            class="lg:max-w-[907px] w-[889px] aspect-[889/410] bg-[#f7f8fa] rounded-xl flex justify-center items-center flex-grow-1 overflow-hidden"
           >
             <img class="object-cover" src="./img/gal2.png" alt="gun picture" />
-          </div>
+          </a>
         </div>
         <div class="flex gap-3 items-center justify-center mt-3">
-          <div
+          <a
+            href="./img/gal3.png"
             class="lg:max-w-[823px] w-[823px] aspect-[823/410] bg-[#f7f8fa] rounded-xl flex justify-center items-center flex-grow-1 overflow-hidden"
           >
             <img
@@ -310,25 +341,28 @@
               src="./img/gal3.png"
               alt="gun picture"
             />
-          </div>
-          <div
+          </a>
+          <a
+            href="./img/gal4.png"
             class="lg:max-w-[519px] w-[519px] aspect-[519/410] bg-[#f7f8fa] rounded-xl flex justify-center items-center flex-grow-1 overflow-hidden"
           >
             <img class="object-cover" src="./img/gal4.png" alt="gun picture" />
-          </div>
+          </a>
         </div>
       </div>
       <!-- ------------------------------------------------------------------------------------------------- -->
-      <div class="block sm:hidden">
+      <div class="gallery-content block sm:hidden">
         <div class="flex gap-3 items-center justify-center">
-          <div
-            class="lg:max-w-[907px] w-[907px] aspect-[907/410] bg-[#f7f8fa] rounded-xl flex justify-center items-center flex-grow-1 overflow-hidden"
+          <a
+            href="img/gal2.png"
+            class="lg:max-w-[907px] w-[889px] aspect-[889/410] bg-[#f7f8fa] rounded-xl flex justify-center items-center flex-grow-1 overflow-hidden"
           >
             <img class="object-cover" src="./img/gal2.png" alt="gun picture" />
-          </div>
+          </a>
         </div>
         <div class="flex gap-3 items-center justify-center mt-3">
-          <div
+          <a
+            href="./img/gal3.png"
             class="lg:max-w-[823px] w-[823px] aspect-[823/410] bg-[#f7f8fa] rounded-xl flex justify-center items-center flex-grow-1 overflow-hidden"
           >
             <img
@@ -336,22 +370,25 @@
               src="./img/gal3.png"
               alt="gun picture"
             />
-          </div>
+          </a>
         </div>
         <div class="flex gap-3 items-center justify-center mt-3">
-          <div
-            class="lg:max-w-[440px] w-[440px] aspect-[440/410] bg-[#f7f8fa] rounded-xl flex justify-center items-center flex-grow-1 overflow-hidden"
+          <a
+            data-lg-size="720-1080"
+            data-video='{"source": [{"src":"img/IMG_5585.MOV", "type":"video/mp4"}], "attributes": {"preload": false, "controls": true}}'
+            class="cursor-pointer lg:max-w-[440px] w-[440px] aspect-[440/410] bg-[#f7f8fa] rounded-xl flex justify-center items-center flex-grow-1 overflow-hidden"
           >
             <video autoplay muted playsinline loop>
               <source src="./img/IMG_5585.MOV" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-          </div>
-          <div
+          </a>
+          <a
+            href="./img/gal4.png"
             class="lg:max-w-[519px] w-[519px] aspect-[519/410] bg-[#f7f8fa] rounded-xl flex justify-center items-center flex-grow-1 overflow-hidden"
           >
             <img class="object-cover" src="./img/gal4.png" alt="gun picture" />
-          </div>
+          </a>
         </div>
       </div>
 
@@ -611,14 +648,24 @@
             <label class="relative flex-1 lg:h-[85px] h-12 md:h-16 flex-grow-1">
               <img
                 class="absolute top-[50%] md:left-7 left-2 translate-y-[-50%]"
-                src="./img/icons/phone.png"
-                alt="icon" />
+                src="./img/icons/phone.png" />
               <input
                 class="max-w-[100%] w-[100%] lg:h-[85px] h-12 md:h-16 md:pl-[58px] pl-8 bg-white rounded-lg font-['Montserrat']"
                 type="tel"
                 name="tel"
                 required
-                placeholder="Номер телефону"
+                placeholder="Телефон"
+            /></label>
+            <label class="relative flex-1 lg:h-[85px] h-12 md:h-16 flex-grow-1">
+              <img
+                class="absolute top-[50%] md:left-7 left-2 translate-y-[-50%]"
+                src="./img/icons/avatar.png" />
+              <input
+                class="max-w-[100%] w-[100%] lg:h-[85px] h-12 md:h-16 md:pl-[58px] pl-8 bg-white rounded-lg font-['Montserrat']"
+                type="text"
+                name="name"
+                required
+                placeholder="Ім'я"
             /></label>
 
             <input
@@ -670,14 +717,24 @@
               <label class="relative h-12 max-w-[100%] w-[100%]">
                 <img
                   class="absolute top-[50%] md:left-4 left-2 translate-y-[-50%]"
-                  src="./img/icons/phone.png"
-                  alt="icon" />
+                  src="./img/icons/phone.png" />
                 <input
                   class="max-w-[100%] w-[100%] h-12 md:pl-[40px] pl-8 bg-white rounded-sm font-['Montserrat'] border-solid border-2 border-[#0f62fe] text-xs"
                   type="tel"
                   name="tel"
                   required
-                  placeholder="Номер телефону"
+                  placeholder="Телефон"
+              /></label>
+              <label class="relative h-12 max-w-[100%] w-[100%]">
+                <img
+                  class="absolute top-[50%] md:left-4 left-2 translate-y-[-50%]"
+                  src="./img/icons/avatar.png" />
+                <input
+                  class="max-w-[100%] w-[100%] h-12 md:pl-[40px] pl-8 bg-white rounded-sm font-['Montserrat'] border-solid border-2 border-[#0f62fe] text-xs"
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Ім'я"
               /></label>
 
               <input
@@ -696,50 +753,23 @@
         </button>
       </div>
     </div>
-    <div
-      id="sucsses"
-      class="hidden fixed top-0 bottom-0 left-0 right-0 bg-[#ffffff]"
-    >
-      <div class="max-w-[506px] mx-auto sm:pt-40 pt-24">
-        <img
-          class="mx-auto w-6 h-6 sm:w-auto sm:h-auto"
-          src="./img/icons/sucsses.png"
-          alt="sucsses"
-        />
-        <h3
-          class="font-['Montserrat'] sm:text-5xl text-3xl font-medium text-center sm:mt-8 mt-3"
-        >
-          Дякуюємо!
-        </h3>
-        <p
-          class="font-['Montserrat'] sm:text-2xl text-xs font-normal text-center sm:mt-4 mt-2"
-        >
-          Ми перетелефонуємо вам протягом 2 хв
-        </p>
-      </div>
-    </div>
+
     <script>
-      const gallaryHero = new SimpleLightbox(".galleryHero a", {});
-      // gallaryHero.on("shown.simplelightbox", (e) => {
-      //   if (e.srcElement.getAttribute("data-lightbox-type") === "video") {
-      //     console.log(document.querySelector(".simple-lightbox .sl-image"));
-
-      //     document.querySelector(
-      //       ".sl-image"
-      //     ).innerHTML = `<video class="h-[100%] mx-auto" autoplay controls playsinline loop><source src="./img/hero.mp4" type="video/mp4" />Your browser does not support the video tag.</video>`;
-      //   }
-      // });
-
-      // gallaryHero.on("changed.simplelightbox", (e) => {
-      //   console.log("e", e);
-      //   if (e.srcElement.getAttribute("data-lightbox-type") === "video") {
-      //     console.log(document.querySelector(".simple-lightbox .sl-image"));
-
-      //     document.querySelector(
-      //       ".sl-image"
-      //     ).innerHTML = `<video class="h-[100%] mx-auto" autoplay controls playsinline loop><source src="./img/hero.mp4" type="video/mp4" />Your browser does not support the video tag.</video>`;
-      //   }
-      // });
+      function gallary(rootDiv) {
+        lightGallery(rootDiv, {
+          selector: "a",
+          plugins: [lgVideo],
+          speed: 500,
+          licenseKey: "your_license_key",
+          download: false,
+          mobileSettings: {
+            controls: true,
+            showCloseIcon: true,
+            download: false,
+          },
+        });
+      }
+      document.querySelectorAll(".gallery-content").forEach((e) => gallary(e));
     </script>
     <script>
       const backdrop = document.getElementById("backdrop");
@@ -771,18 +801,26 @@
       const modalForm = document.querySelector("#modal form");
       modalForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        console.log(e.target.querySelector("label input").value);
+        const value = {};
+        e.target.querySelectorAll("label input").forEach((e) => {
+          value[e.name] = e.value;
+        });
+        console.log(value);
 
-        document.getElementById("sucsses").classList.remove("hidden");
+        window.location.href = "./thankyou";
       });
     </script>
     <script>
       const footerForm = document.querySelector("footer form");
       footerForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        console.log(e.target.querySelector("label input").value);
+        const value = {};
+        e.target.querySelectorAll("label input").forEach((e) => {
+          value[e.name] = e.value;
+        });
+        console.log(value);
 
-        document.getElementById("sucsses").classList.remove("hidden");
+        window.location.href = "./thankyou";
       });
     </script>
   </body>
